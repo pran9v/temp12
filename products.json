@@ -1,0 +1,74 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "Vintage Glam Tote",
+            "price": 40.09,
+            "description": "Vintage faux leather tote with sequins, water-resistant, removable strap, and zipper closure.",
+            "image": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/3f32e305dc1a497d93a4126eceeabd68.jpg?imageView2/2/w/800/q/70/format/webp",
+            "category": "table",
+            "badge": "Bestseller",
+            "features": [
+                "Faux leather material",
+                "Water-resistant design",
+                "Removable strap",
+                "Zipper closure",
+                "Sequin embellishments"
+            ],
+            "inStock": true,
+            "freeShipping": true
+        },
+        {
+            "id": "2",
+            "name": "Floral Elegant Tote",
+            "price": 41.44,
+            "description": "Floral Pattern Tote Bag with Zipper Closure, Elegant And Stylish Shoulder Bag for Women.",
+            "image": "https://img.kwcdn.com/product/fancy/fc33e8a9-299d-4ca2-990c-a077c6c00d58.jpg?imageView2/2/w/800/q/70/format/webp",
+            "category": "floor",
+            "badge": "Popular",
+            "features": [
+                "Floral pattern design",
+                "Elegant and stylish",
+                "Zipper closure",
+                "Perfect for daily wear"
+            ],
+            "inStock": true,
+            "freeShipping": true
+        },
+        {
+            "id": "3",
+            "name": "Retro Chic Tote",
+            "price": 39.09,
+            "description": "Retro large-capacity tote bag with multi-layer design, women's crossbody and handbag, stylish and versatile.",
+            "image": "https://img.kwcdn.com/product/fancy/fba2e21e-145c-410d-baf4-172125040375.jpg?imageView2/2/w/800/q/70/format/webp",
+            "category": "desk",
+            "badge": "Sale",
+            "features": [
+                "Large-capacity design",
+                "Multi-layer compartments",
+                "Versatile crossbody and handbag style",
+                "Stylish and practical"
+            ],
+            "inStock": true,
+            "freeShipping": true
+        },
+        {
+            "id": "4",
+            "name": "Jewel Clutch Bag",
+            "price": 28.20,
+            "description": "Women's glamorous evening clutch bag with sunflower design, sparkling rhinestones, and luxury appeal, perfect for parties and banquets.",
+            "image": "https://img.kwcdn.com/product/fancy/3f380bfc-1651-4dc2-aff9-f775349cac7d.jpg?imageView2/2/w/800/q/70/format/webp",
+            "category": "pendant",
+            "badge": "New",
+            "features": [
+                "Sunflower design",
+                "Sparkling rhinestones",
+                "Luxury appeal",
+                "Perfect for parties and banquets",
+                "Compact and elegant"
+            ],
+            "inStock": true,
+            "freeShipping": true
+        }
+    ]
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>socksy - socks for young</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon.jpg">
+    <link rel="manifest" href="./assets/site.webmanifest">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/logo.jpg" alt="">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html#products"><i class="fas fa-shopping-basket"></i> Products</a></li>
+                <li><a href="privacy.html"><i class="fas fa-user-lock"></i> Privacy</a></li>
+                <li><a href="terms.html"><i class="fas fa-file-alt"></i> Terms</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Banner Section -->
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h1>Chic & Durable Bags</h1>
+                <h2>Bags</h2>
+                <p>Explore our collection of stylish, versatile bags crafted to complement your lifestyle and carry your essentials with ease.</p>
+                <a href="#products" class="cta-button">
+                    Shop Now <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="home-product-header" id="products"><h2>Our Products
+           </h2>
+        <p>Find the Perfect Pair of Socks for Your Little One</p> </section>
+        <section id="products" class="products-grid">
+            <!-- Products will be loaded here dynamically -->
+        </section>
+
+        <section class="socksy-testimonials">
+            <div class="socksy-testimonial">
+                <img src="assets/download.jpg" alt="Parent - Ashley">
+                <h3>Ashley M.</h3>
+                <p>"These socks are perfect for my baby! They stay on all day and are so soft. The non-slip feature gives me peace of mind when my little one is learning to walk."</p>
+            </div>
+            <div class="socksy-testimonial">
+                <img src="assets/download (1).jpg" alt="Parent - David">
+                <h3>David R.</h3>
+                <p>"Finally found socks that don't fall off! The quality is outstanding, and the cute designs make my baby's outfits even more adorable."</p>
+            </div>
+            <div class="socksy-testimonial">
+                <img src="assets/testimonialpicex.jpg" alt="Parent - Maria">
+                <h3>Maria S.</h3>
+                <p>"Love the variety of sizes and designs. These socks grow with your baby, and the elastic is perfect - not too tight, not too loose!"</p>
+            </div>
+            <div class="socksy-testimonial">
+                <img src="assets/download (2).jpg" alt="Parent - John">
+                <h3>John P.</h3>
+                <p>"The best baby socks we've tried! They wash well, maintain their shape, and the colors stay bright. Highly recommend to all new parents!"</p>
+            </div>
+        </section>
+
+        <section class="product-info-tabs">
+            <div class="tab">
+                <div class="tab-header" onclick="toggleTab(this)">
+                    Size Guide <span>&#9654;</span>
+                </div>
+                <div class="tab-content">
+                    <p>Find the perfect fit for your little one:<br>
+                    - Newborn: 0-3 months (4-8 cm foot length)<br>
+                    - Infant: 3-12 months (8-10 cm foot length)<br>
+                    - Toddler: 12-24 months (10-12 cm foot length)</p>
+                </div>
+            </div>
+            <div class="tab">
+                <div class="tab-header" onclick="toggleTab(this)">
+                    Materials & Care <span>&#9654;</span>
+                </div>
+                <div class="tab-content">
+                    <p>Our socks are made with premium materials:<br>
+                    - 80% Cotton, 15% Polyester, 5% Spandex<br>
+                    - Machine washable in cold water<br>
+                    - Tumble dry on low<br>
+                    - No bleach</p>
+                </div>
+            </div>
+            <div class="tab">
+                <div class="tab-header" onclick="toggleTab(this)">
+                    Shipping & Returns <span>&#9654;</span>
+                </div>
+                <div class="tab-content">
+                    <p>- Free shipping on orders over $25<br>
+                    - Standard shipping: 3-5 business days<br>
+                    - Express shipping available<br>
+                    - 30-day return policy<br>
+                    - Free returns on unused items</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./assets/logo.jpg" alt="">
+                    </a>
+                </div>
+                <p>Find the Perfect Handbag to Complement Your Style.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#products">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul class="contact-info">
+                   
+                    <li><i class="fas fa-envelope"></i> info@socksy.site</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Subscribe to get special offers and updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" class="footer-input">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 socksy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Display featured products on homepage (limit to 4 products)
+        async function loadFeaturedProducts() {
+            try {
+                const response = await fetch('products.json');
+                const data = await response.json();
+                const featuredProducts = data.products.slice(0, 4); // Get first 4 products
+                
+                const productsGrid = document.querySelector('.products-grid');
+                productsGrid.innerHTML = featuredProducts.map(product => `
+                    <div class="product-card" onclick="navigateToProduct('${product.id}')">
+                        ${product.badge ? `<div class="product-badge">${product.badge}</div>` : ''}
+                        <img src="${product.image}" alt="${product.name}">
+                        <h3>${product.name}</h3>
+                        <p class="price"><i class="fas fa-tag"></i> $${product.price}</p>
+                        <p><i class="fas fa-star"></i> ${product.description.substring(0, 50)}...</p>
+                        <button class="view-details">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                `).join('');
+            } catch (error) {
+                console.error('Error loading featured products:', error);
+            }
+        }
+        
+        // Initialize featured products
+        document.addEventListener('DOMContentLoaded', loadFeaturedProducts);
+
+    
+        function toggleTab(header) {
+            const tab = header.parentElement;
+            const content = tab.querySelector('.tab-content');
+            const allTabs = document.querySelectorAll('.tab');
+
+            allTabs.forEach(t => {
+                if (t !== tab) {
+                    t.classList.remove('active');
+                    t.querySelector('.tab-content').style.display = 'none';
+                    t.querySelector('span').innerHTML = '&#9654;';
+                }
+            });
+
+            if (tab.classList.contains('active')) {
+                content.style.display = 'none';
+                tab.classList.remove('active');
+                header.querySelector('span').innerHTML = '&#9654;';
+            } else {
+                content.style.display = 'block';
+                tab.classList.add('active');
+                header.querySelector('span').innerHTML = '&#9660;';
+            }
+        }
+    </script>
+</body>
+</html> 

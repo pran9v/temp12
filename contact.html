@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>socksy - handbag Store</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon.jpg">
+    <link rel="manifest" href="./assets/site.webmanifest">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial;
+            background-image: url('images/bg.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container {
+            border-radius: 16px;
+            max-width: 1180px;
+            margin: 0 auto;  /* Changed from 0 80px to center horizontally */
+            padding-top: 6rem;
+            display: flex;
+            justify-content: center;  /* Center horizontally */
+            align-items: center;      /* Center vertically */
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .header-content {
+            font-weight: bold;
+            width: 800px;
+            margin: 20px auto;
+        }
+
+        #header-right-menu {
+            float: right;
+        }
+
+        #header-right-menu a {
+            padding: 12px;
+        }
+
+        .header-active {
+            color: #000;
+        }
+
+        .inner-container {
+            width: 750px;
+            margin: 80px auto;
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;  /* Center the text content */
+        }
+
+        .tile1 {
+            width: 100%;         /* Changed from 350px to take full width */
+            max-width: 450px;    /* Added max-width for better form layout */
+            margin: 0 auto;      /* Center the tile1 div */
+        }
+
+        .tile2 {
+            flex: 1 1 auto;
+            padding: 0px 40px;
+        }
+
+        .tile1-heading {
+            background: black;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            font-size: 2em;
+            margin-bottom: 1rem;  /* Added spacing below heading */
+        }
+
+        .form-row {
+            padding: 20px 0px 0px 0px;
+        }
+
+        .form-field {
+            border-radius: 4px;
+            width: 100%;
+            padding: 15px;
+            background-color: #f5f4fa;
+            border: 0px;
+            box-sizing: border-box;  /* Added to include padding in width calculation */
+        }
+
+        .contact-image {
+            padding: 10px;
+            border-radius: 35px;
+            border: 1px solid #a8a4a4;
+            vertical-align: middle;
+            margin-right: 20px;
+            width: 16px;
+            height: 16px;
+        }
+
+        textarea {
+            height: 100px;
+            font-family: Arial;
+        }
+
+        .btn {
+            font-size: 1rem;
+            color: white;
+            background: rgb(87, 87, 253);
+            transition: all 0.3s ease;  /* Smooth transition for all changes */
+            cursor: pointer;           /* Show pointer cursor on hover */
+            transform: translateY(0);  /* Initial position */
+            border-radius: 1rem;
+        }
+
+        .btn:hover {
+            background: rgb(66, 66, 255);  /* Slightly darker shade on hover */
+            transform: translateY(-3px);   /* Move up 3px on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Add shadow for depth */
+        }
+
+        .btn:active {
+            transform: translateY(-1px);  /* Slight push down when clicked */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  /* Smaller shadow when clicked */
+        }
+        .tile2-image img {
+            width: 321px;
+            height: 211px;
+        }
+
+        #menu-icon {
+            display: none;
+            float: right;
+        }
+
+        @media all and (max-width: 900px) {
+            .inner-container {
+                width: auto;
+                display: block;
+                margin: 30px auto;
+            }
+
+            .header-content {
+                width: auto;
+            }
+
+            .tile1 {
+                width: 100%;
+            }
+
+            .tile2 {
+                padding: 0px;
+            }
+
+            .tile2-image img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media all and (max-width: 768px) {
+            .container {
+                padding-top: 15rem;
+            }
+            .inner-container {
+                width: auto;
+                display: block;
+                margin: 30px auto;
+            }
+
+            .header-content {
+                width: auto;
+            }
+
+            .tile1 {
+                width: 100%;
+            }
+
+            .tile2 {
+                padding: 0px;
+            }
+
+            .tile2-image img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media all and (max-width: 540px) {
+            .container {
+                padding-top: 16rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            #header-right-menu {
+                float: none;
+                display: none;
+            }
+
+            #header-right-menu a {
+                display: block;
+                padding: 10px 0px;
+            }
+
+            #menu-icon {
+                display: block;
+                float: right;
+            }
+        }
+
+        @media all and (max-width: 400px) {
+            .container {
+                padding-top: 16rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/logo.jpg" alt="">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html#products"><i class="fas fa-shopping-basket"></i> Products</a></li>
+                <li><a href="privacy.html"><i class="fas fa-user-lock"></i> Privacy</a></li>
+                <li><a href="terms.html"><i class="fas fa-file-alt"></i> Terms</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        
+        <div class="inner-container">
+            <div class="tile1">
+                <div class="tile1-heading">Get in touch</div>
+                <div class="form-row">We are here for you! How can we help?</div>
+                <form>
+                    <div class="form-row">
+                        <input type="text" class="form-field" placeholder="Enter your name">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" class="form-field" placeholder="Enter your email address">
+                    </div>
+                    <div class="form-row">
+                        <textarea class="form-field" placeholder="Go ahead we are listening..."></textarea>
+                    </div>
+                    <div class="form-row">
+                        <input type="button" class="form-field btn" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menuElement = document.getElementById("header-right-menu");
+            if (menuElement.style.display === "block") {
+                menuElement.style.display = "none";
+            } else {
+                menuElement.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
