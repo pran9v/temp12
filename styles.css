@@ -1574,10 +1574,10 @@ p {
     .footer-bottom {
         text-align: center;
         padding: 2rem;
-        margin-top: 3rem;
+        margin-top: 5rem;
         background: #3498db;
         color: white;
-        position: relative;
+        //position: relative;
     }
 
     .footer-bottom::before {
